@@ -28,8 +28,8 @@ steps:
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: True
 
-- task: AzureRmWebAppDeployment@3
-  inputs:
-    azureSubscription: "193e9be5-f904-4b93-ae67-38dbfc4b391f"
-    WebAppName: 'TestingWebPipeline'
-    Package: $(System.ArtifactsDirectory)/**/*.zip
+# - task: AzureRmWebAppDeployment@3
+#   inputs:
+#     azureSubscription: "193e9be5-f904-4b93-ae67-38dbfc4b391f"
+#     WebAppName: 'TestingWebPipeline'
+#     Package: $(System.ArtifactsDirectory)/**/*.zip
